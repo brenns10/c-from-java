@@ -27,6 +27,12 @@ int main(int argc, char *argv[])
 
   if (strcmp(argv[1], "static") == 0) {
     ex_static();
+  } else if (strcmp(argv[1], "segfault") == 0) {
+    ex_segfault();
+  } else if (strcmp(argv[1], "fork") == 0) {
+    ex_fork();
+  } else if (strcmp(argv[1], "debug") == 0) {
+    ex_debug();
   } else {
     fprintf(stderr, "error: example \"%s\" not found\n", argv[1]);
     return -1;
