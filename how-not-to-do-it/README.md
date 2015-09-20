@@ -1,6 +1,6 @@
 # Why you should never put definitions in header files.
 
-The only things that belon in a header file are declarations (and preprocessor
+The only things that belong in a header file are declarations (and preprocessor
 macros, like `#define`).  Take a look at this code, and the error messages it
 produces, to see why.
 
