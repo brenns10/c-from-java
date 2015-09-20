@@ -15,6 +15,7 @@ collect2: error: ld returned 1 exit status
 ```
 
 What happened?
+
 1. The definition of function `increment()` was `#include`'d into both `main.c`,
    and `other.c`.
 2. So, two copies of it were compiled, one in `main.o`, and the other in
